@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+html, body{
+    background-color: var(--Grayish-blue);
+    
+}
+
+.flex {
+    height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 3%;
+    text-align: center;
+    padding-inline: 30px;
+    position: absolute;
+    top: 18%;
+    left: 40%;
+}
+
+p {
+    padding-top: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    /* padding-inline: 6px; */
+    text-align: center;
+    
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Dark-blue);
+}
+
+img {
+    margin-top: 15px;
+    width: 270px;
+    border-radius: 3%;
+    
+}
+
+/* Mobile 375px */
+
+@media (max-width: 844px) and (min-width: 390px) { 
+    .flex {
+        position: absolute;
+       left: 12%;
+       top: 16%; 
+    }
+ }
+ /* Mobile 375px */
+
+ /* @media (max-width: 547px) and (min-width: 374px) { 
+    .flex {
+        position: absolute;
+       left: 30%; 
+    }
+ } */
